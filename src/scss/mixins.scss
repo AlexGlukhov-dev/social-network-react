@@ -1,0 +1,27 @@
+@mixin Font($px, $fw) {
+    font-family: $fontLoad;
+    font-size: $px;
+    font-weight: $fw;
+    color: $fontColor;
+}
+
+@mixin Border($px, $type, $color){
+    border: $px $type $color;    
+}
+
+@mixin link($fs, $hover, $active){
+    a {
+        font-weight: regular;
+        font-size: $fs;
+        color: #c3dd2c;
+        
+
+        &:hover {
+            color: $hover;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+}

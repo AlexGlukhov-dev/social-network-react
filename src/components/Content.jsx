@@ -1,4 +1,5 @@
 import React from 'react';
+import './css_for_components/Content.css' ;
 
 
 const Content = () => {
@@ -21,7 +22,7 @@ const Content = () => {
         <div className='content_feed'>
             <div className='new__post'>
               <form method='get'>
-              <input type='text' />
+              <input type='text' value='new post' />
               <button>Submit</button>
               </form>
               <div className='post'>New Post</div>

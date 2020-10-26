@@ -1,0 +1,9 @@
+.header{
+    grid-area: h;
+    background: linear-gradient(320deg, #41013a 0%, #44003d 29%, #100911 73%, #100911 100%);
+    >img {
+        height: 120px;
+        width: 250px;
+        margin-left: 30px;
+    }
+}

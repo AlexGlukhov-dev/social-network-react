@@ -1,9 +1,10 @@
 .container {
+  margin: 0 10px 10px 10px;
   border-radius: 20px;
   background: linear-gradient(45deg, #03835c 0%, #087eec 100%);
   grid-area: c;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 30% 70%;
   grid-template-rows: 30% 50% 20%;
   grid-template-areas: "p cf" "p cf" "p cf";
   color: #b3f5c479;
@@ -12,6 +13,10 @@
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
+  width: 300px;
+  margin: 5px;
+  border-radius: 20px;
+  border: 2px double #0a6a7e;
   grid-area: p;
 }
 .container .content .ava_img > img {
@@ -32,27 +37,23 @@
   font-size: 18px;
   margin-left: 20px;
 }
+.container .content .profile > ul li > span {
+  font-size: 14px;
+}
 .container .content_feed {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 2;
+  border-radius: 20px;
+  border: 2px double #0a6a7e;
+  margin: 5px;
   grid-area: cf;
-  display: grid;
-  grid-template-rows: 30% 20% 50%;
-  grid-template-areas: "new_post" "post" "old_post";
+  display: flex;
 }
 .container .content_feed .new__post {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: new_post;
+  margin: 10px;
 }
-.container .content_feed .post {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: post;
-}
-.container .content_feed .old_posts {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: old_post;
+.container .content_feed .new__post .new_feed {
+  border-radius: 15px;
+  padding: 10px;
 }

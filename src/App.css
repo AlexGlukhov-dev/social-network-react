@@ -73,6 +73,6 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(320deg, #41013a 0%, #44003d 49%, #100911 73%, #100911 100%);
   display: grid;
   grid-template-areas: "h h h" "c c n" "f f f";
-  grid-template-rows: 20% 85% 5%;
+  grid-template-rows: 20% 75% 5%;
   grid-template-columns: 30% 50% 20%;
 }

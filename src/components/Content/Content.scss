@@ -1,9 +1,10 @@
 .container{
+    margin: 0 10px 10px 10px;
     border-radius: 20px;
     background: linear-gradient(45deg, #03835c 0%, #087eec 100%);
     grid-area: c;
     display: grid ;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 70%;
     grid-template-rows: 30% 50% 20%;
     grid-template-areas:
     'p cf'
@@ -11,6 +12,10 @@
     'p cf' ;
     color: #b3f5c479;
       .content{
+        width: 300px;
+        margin: 5px;
+        border-radius: 20px;
+        border: 2px double #0a6a7e ;
         grid-area: p;
         .ava_img > img{
           height: 200px;
@@ -32,30 +37,36 @@
             font-weight: 500;
             font-size: 18px;
             margin-left: 20px;
+            >span {
+              font-size: 14px;
+            }
           }
         }
       }
       .content_feed {
+        border-radius: 20px;
+        border: 2px double #0a6a7e ;
+        margin: 5px;
         grid-area: cf;
-        display: grid;
-        grid-template-rows: 30% 20% 50%;
-        grid-template-areas:
-              'new_post'
-              'post'
-              'old_post'
-         ;
+        display: flex;
   
   
          .new__post{
-           grid-area: new_post;
+      
+           margin: 10px;
+
+          .new_feed{
+            border-radius: 15px;
+            padding: 10px;
+          }
          }
   
          .post{
-           grid-area: post;
+          
          }
   
          .old_posts{
-           grid-area: old_post;
+          
          }
   
       }  

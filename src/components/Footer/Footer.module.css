@@ -2,9 +2,9 @@
   grid: f;
   width: 1345px;
   padding-top: 10px;
-  background: #91ffed;
-  text-align: right;
+  font-style: oblique;
+  color: blue;
 }
 .footer > p {
-  margin-right: 50px;
+  margin-left: 100px;
 }

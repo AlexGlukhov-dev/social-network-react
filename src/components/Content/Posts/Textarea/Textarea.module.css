@@ -1,0 +1,23 @@
+.form {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.form .new_feed {
+  border-radius: 15px;
+  padding: 10px;
+}
+.form .btns {
+  display: flex;
+}
+.form .btns .btn {
+  display: block;
+  border-radius: 15px;
+  background: #00c00a;
+  color: #9effff;
+  width: 95px;
+  height: 25px;
+}
+.form .btns .inp {
+  color: #0680AF;
+}

@@ -1,73 +1,16 @@
 .container{
-    margin: 0 10px 10px 10px;
-    border-radius: 20px;
-    background: linear-gradient(45deg, #03835c 0%, #087eec 100%);
-    grid-area: c;
-    display: grid ;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 30% 50% 20%;
-    grid-template-areas:
+
+  margin: 0 10px 10px 10px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #03835c 0%, #087eec 100%);
+  grid-area: c;
+  display: grid ;
+  grid-template-columns: 30% 70%;
+ 
+  grid-template-areas:
     'p cf'
     'p cf'
     'p cf' ;
-    color: #b3f5c479;
-      .content{
-        width: 300px;
-        margin: 5px;
-        border-radius: 20px;
-        border: 2px double #0a6a7e ;
-        grid-area: p;
-        .ava_img > img{
-          height: 200px;
-          margin-top: 40px;
-          margin-left: 30px;
-        }
-  
-        .profile{
-  
-          >p {
-            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-            font-style: italic;
-            font-size: 20px;
-            margin-left:60px ;
-            margin-bottom: 40px;
-          }
-          >ul li {
-            margin-top: 10px;
-            font-weight: 500;
-            font-size: 18px;
-            margin-left: 20px;
-            >span {
-              font-size: 14px;
-            }
-          }
-        }
-      }
-      .content_feed {
-        border-radius: 20px;
-        border: 2px double #0a6a7e ;
-        margin: 5px;
-        grid-area: cf;
-        display: flex;
-  
-  
-         .new__post{
+  color: #b3f5c479;
       
-           margin: 10px;
-
-          .new_feed{
-            border-radius: 15px;
-            padding: 10px;
-          }
-         }
-  
-         .post{
-          
-         }
-  
-         .old_posts{
-          
-         }
-  
-      }  
-  }
+}

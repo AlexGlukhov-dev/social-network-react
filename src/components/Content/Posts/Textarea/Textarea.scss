@@ -1,0 +1,30 @@
+.form{
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  
+  .new_feed {
+    border-radius: 15px;
+    padding: 10px;
+   
+   
+  }  
+  
+  .btns {
+    display: flex;
+    .btn {
+      display: block;
+      border-radius: 15px ;
+      background: #00c00a;
+      color: #9effff;
+      width: 95px;
+      height: 25px;
+      
+    }
+
+    .inp{
+      color: #0680AF;
+      
+    }
+  }
+}

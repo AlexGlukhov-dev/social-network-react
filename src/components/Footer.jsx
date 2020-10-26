@@ -1,10 +1,10 @@
 import React from 'react';
-import './css_for_components/Footer.css' ;
+import classes from './css_for_components/Footer.module.css' ;
 
 
 const Footer = () => {
     return (
-      <footer className='footer'>
+      <footer className={classes.footer}>
         <p>AlexGlukhov 2020 react-kabzda-kak-kruto ©</p> 
      </footer>
     ) ;

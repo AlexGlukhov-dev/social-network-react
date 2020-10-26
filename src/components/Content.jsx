@@ -1,15 +1,15 @@
 import React from 'react';
-import './css_for_components/Content.css' ;
+import classes from './css_for_components/Content.module.css' ;
 
 
 const Content = () => {
     return (
-      <div className='container'>
-        <div className='content'>
-          <div className='ava_img'>
+      <div className={classes.container}>
+        <div className={classes.content}>
+          <div className={classes.ava_img}>
             <img src='https://msk.islandgift.ru/user/standard/man.png' />
           </div>
-          <div className='profile' >
+          <div className={classes.profile} >
             <p>Alex Glukhov</p>
             <ul> 
               <li>Date of bridg : 06 may 1993</li>
@@ -19,14 +19,14 @@ const Content = () => {
             </ul>
           </div>
         </div>
-        <div className='content_feed'>
-            <div className='new__post'>
+        <div className={classes.content_feed}>
+            <div className={classes.new__post}>
               <form method='get'>
               <input type='text' value='new post' />
               <button>Submit</button>
               </form>
-              <div className='post'>New Post</div>
-              <div className='old_posts'>
+              <div className={classes.post}>New Post</div>
+              <div className={classes.old_posts}>
                 <p>Old Post</p>
 
               </div>

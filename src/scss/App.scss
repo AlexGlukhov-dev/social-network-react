@@ -1,6 +1,7 @@
 @import 'null_style' ;
 
 .wrapper {
+  background: linear-gradient(320deg, #41013a 0%, #44003d 49%, #100911 73%, #100911 100%);
   display: grid;
   grid-template-areas:
   'h h h'

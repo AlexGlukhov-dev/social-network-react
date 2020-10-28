@@ -11,9 +11,6 @@ const Textarea = () => {
           </div>
           <div className={classes.btns}>
             <div>
-              <input type="file"  className={classes.inp}/>
-            </div>
-            <div>
               <button className={classes.btn}>Submit</button>
             </div>
           </div>

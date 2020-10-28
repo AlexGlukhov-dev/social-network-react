@@ -3,7 +3,10 @@
   border: 2px double #0a6a7e ;
   margin: 5px;
   grid-area: cf;
+  overflow: auto;
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
+
   
-}
+} 

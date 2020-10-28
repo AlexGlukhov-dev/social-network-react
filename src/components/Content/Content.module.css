@@ -1,10 +1,11 @@
 .container {
-  margin: 0 10px 10px 10px;
+  height: 7fr;
+  margin: 0 10px 10px 20px;
   border-radius: 20px;
   background: linear-gradient(45deg, #03835c 0%, #087eec 100%);
   grid-area: c;
   display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-areas: "p cf" "p cf" "p cf";
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "p cf";
   color: #b3f5c479;
 }

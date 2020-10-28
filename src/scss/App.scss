@@ -1,14 +1,16 @@
 @import 'null_style' ;
 
 .wrapper {
+  max-height: 100%;
   background: linear-gradient(320deg, #41013a 0%, #44003d 49%, #100911 73%, #100911 100%);
   display: grid;
   grid-template-areas:
   'h h h'
   'c c n'
   'f f f' ;
-  grid-template-rows: 20% 75% 5% ;
+  grid-template-rows: 140px 5fr 50px ;
   grid-template-columns: 30% 50% 20%;
+  
 }
 
 

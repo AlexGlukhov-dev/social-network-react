@@ -1,0 +1,103 @@
+.post {
+    margin-left: 220px;
+    padding: 10px;
+    color: rgb(149, 252, 149);
+    border: 1px solid #056892;
+    background:linear-gradient(45deg, #048189 0%,#0775b4 100%);
+    height: 120px;
+    width: 450px;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 30px;
+    >img {
+      width: 40px;
+      height: 40px;
+      border-radius: 30px;
+    }
+    >span{
+        position: relative;
+        top: 10px;
+        left: 5px;
+    }
+    .message{
+        font-weight: 500;
+        font-size: 17px;
+        color: rgb(26, 37, 8);
+        margin-top: 5px;
+        margin-left: 50px;
+        
+        
+    }
+    .bb{
+        margin-top: 15px;
+        border-bottom:  1px solid #076d99;
+    }
+    .icon{
+        display: flex;
+        .like{
+            position: relative;
+            
+            >img{
+                margin-top: 2px;
+                margin-left: 5px;
+                width: 25px;
+                height: 25px;
+            }
+
+            >span{
+                position: relative;
+                top: 5px;
+            }
+        }
+
+        .comment {
+            position: relative;
+            
+            >img{
+                margin-top: 5px;
+                margin-left: 25px;
+                width: 20px;
+                height: 20px;
+            }
+
+            >span{
+                position: relative;
+                top: 5px;
+            }
+        }
+
+        .repost {
+            position: relative;
+            
+            >img{
+                margin-top: 3px;
+                margin-left: 25px;
+                width: 23px;
+                height: 23px;
+            }
+
+            >span{
+                position: relative;
+                top: 5px;
+            }
+        }
+
+        .view {
+            position: relative;
+            
+            >img{
+                margin-top: 2px;
+                margin-left: 210px;
+                width: 24px;
+                height: 25px;
+            }
+
+            >span{
+                opacity: 0.8;
+                position: relative;
+                top: 7px;
+            }   
+        }
+    }
+}
+  

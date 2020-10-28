@@ -1,14 +1,18 @@
 .form {
+  grid-area: text;
   margin: 15px;
   display: flex;
   flex-direction: column;
+  margin-top: 90px;
+  margin-left: 330px;
 }
 .form .new_feed {
   border-radius: 15px;
   padding: 10px;
 }
 .form .btns {
-  display: flex;
+  margin-left: 243px;
+  margin-top: 5px;
 }
 .form .btns .btn {
   display: block;
@@ -17,7 +21,4 @@
   color: #9effff;
   width: 95px;
   height: 25px;
-}
-.form .btns .inp {
-  color: #0680AF;
 }

@@ -1,0 +1,14 @@
+.repost {
+  position: relative;
+}
+.repost .repost__img {
+  margin-top: 3px;
+  margin-left: 25px;
+  width: 23px;
+  height: 23px;
+}
+.repost .repost__props {
+  position: relative;
+  top: 7px;
+  left: 4px;
+}

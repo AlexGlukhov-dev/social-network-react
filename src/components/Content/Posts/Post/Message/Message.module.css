@@ -1,0 +1,8 @@
+.message {
+  margin-left: 50px;
+}
+.message .message__text {
+  font-weight: 500;
+  font-size: 17px;
+  color: #1a2508;
+}

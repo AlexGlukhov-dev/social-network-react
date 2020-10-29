@@ -1,0 +1,17 @@
+.view {
+    position: relative;
+    
+    .view__img{
+        margin-top: 1px;
+        margin-left: 230px;
+        width: 22px;
+        height: 22px;
+    }
+
+    .view__props{
+        
+        position: relative;
+        top: 5px;
+        left: 5px;
+    }   
+}

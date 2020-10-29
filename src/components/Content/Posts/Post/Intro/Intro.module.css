@@ -1,0 +1,22 @@
+.post__intro {
+  display: flex;
+  align-items: center;
+}
+.post__intro .intro__ava {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
+.post__intro .intro__text {
+  margin-bottom: 4px;
+  border-bottom: 1px solid #076d99;
+  padding-bottom: 5px;
+}
+.post__intro .intro__text .intro__name {
+  display: inline-block;
+  margin-left: 10px;
+}
+.post__intro .intro__text .intro__data {
+  display: inline-block;
+  margin-left: 200px;
+}

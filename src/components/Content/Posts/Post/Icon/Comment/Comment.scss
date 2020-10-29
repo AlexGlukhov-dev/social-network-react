@@ -1,0 +1,16 @@
+.comment {
+    position: relative;
+    
+    .comment__img{
+        margin-top: 5px;
+        margin-left: 25px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .comment__props{
+        position: relative;
+        top: 7px;
+        left: 4px;
+    }
+}

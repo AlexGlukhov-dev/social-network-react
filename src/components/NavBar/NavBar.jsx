@@ -1,48 +1,47 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import classes from './NavBar.module.css' ;
 
 const NavBar = () => {
     return (
       <nav className={classes.nav_bar}>
-          <ul>
-            <li>
-              <a href='/profile'>
+            <div>
+              <NavLink to='/profile' activeClassName={classes.selected}>
                 <span>Profile</span>
                 <span>Profile</span>
-              </a>
-            </li>
-            <li>
-              <a href='/message'>
+              </NavLink>
+            </div>
+            <div>
+              <NavLink to='/message' activeClassName={classes.selected}>
                 <span>Message</span>
                 <span>Message</span>
-              </a>
-            </li>
-            <li>
-              <a href='/friends'>
+              </NavLink>
+            </div>
+            <div>
+              <NavLink to='/friends' activeClassName={classes.selected}>
                 <span>Friends</span>
                 <span>Friends</span>
-              </a>
-            </li>
-            <li>
-              <a href='/music'>
+              </NavLink>
+            </div>
+            <div>
+              <NavLink to='/music' activeClassName={classes.selected}>
                 <span>Music</span>
                 <span>Music</span>
-              </a>
-            </li>
-            <li>
-              <a href='/feeds'>
+              </NavLink>
+            </div>
+            <div>
+              <NavLink to='/feeds' activeClassName={classes.selected}>
                 <span>News</span>
                 <span>News</span>
-              </a>
-            </li>
-            <li>
-              <a href='/settings'>
+              </NavLink>
+            </div>
+            <div>
+              <NavLink to='/settings' activeClassName={classes.selected}>
                 <span>Settings</span>
                 <span>Settings</span>
-              </a>
-            </li>
-            
-          </ul>
+              </NavLink>
+            </div>
+
       </nav>
     );
   }

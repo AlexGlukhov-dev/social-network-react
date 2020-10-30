@@ -6,6 +6,12 @@ import NavBar from './components/NavBar/NavBar';
 import Content from './components/Content/Content';
 import Footer from './components/Footer/Footer';
 import Dialogs from './components/Dialogs/Dialogs';
+import Friends from './components/Friends/Friends';
+import Music from './components/Music/Music';
+import News from './components/News/News';
+import Settings from './components/Settings/Settings';
+import { BrowserRouter, Route } from 'react-router-dom';
+
 
 
 
@@ -13,14 +19,23 @@ import Dialogs from './components/Dialogs/Dialogs';
 
 const App = () => {
   return (
-    <div className='wrapper'>
-      <Header />
-      <NavBar />
-      <div className='wrapper_content'>
-        <Content />
+    <BrowserRouter>
+      <div className='wrapper'>
+        <Header />
+        <NavBar />
+        <div className='wrapper_content'>
+        
+          <Route path='/profile' component={Content} />
+          <Route path='/message' component={Dialogs} />
+          <Route path='/friends' component={Friends} />
+          <Route path='/music' component={Music} />
+          <Route path='/feeds' component={News} />
+          <Route path='/settings' component={Settings} />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </BrowserRouter>
+    
   );
 }
 

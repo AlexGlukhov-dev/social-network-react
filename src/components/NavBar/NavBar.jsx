@@ -6,37 +6,37 @@ const NavBar = () => {
       <nav className={classes.nav_bar}>
           <ul>
             <li>
-              <a href='#'>
+              <a href='/profile'>
                 <span>Profile</span>
                 <span>Profile</span>
               </a>
             </li>
             <li>
-              <a href='#'>
-                <span>News</span>
-                <span>News</span>
-              </a>
-            </li>
-            <li>
-              <a href='#'>
-                <span>Friends</span>
-                <span>Friends</span>
-              </a>
-            </li>
-            <li>
-              <a href='#'>
+              <a href='/message'>
                 <span>Message</span>
                 <span>Message</span>
               </a>
             </li>
             <li>
-              <a href='#'>
-                <span>Audio</span>
-                <span>Audio</span>
+              <a href='/friends'>
+                <span>Friends</span>
+                <span>Friends</span>
               </a>
             </li>
             <li>
-              <a href='#'>
+              <a href='/music'>
+                <span>Music</span>
+                <span>Music</span>
+              </a>
+            </li>
+            <li>
+              <a href='/feeds'>
+                <span>News</span>
+                <span>News</span>
+              </a>
+            </li>
+            <li>
+              <a href='/settings'>
                 <span>Settings</span>
                 <span>Settings</span>
               </a>

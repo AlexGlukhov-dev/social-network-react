@@ -1,0 +1,5 @@
+.interlocutors {
+  grid-area: i;
+  width: 300px;
+  border-right: 1px solid red;
+}

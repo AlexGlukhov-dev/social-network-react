@@ -1,0 +1,6 @@
+.dialogs_container {
+  padding: 5px;
+  display: grid;
+  grid-template-areas: "i d";
+  grid-template-rows: 1fr 2fr;
+}

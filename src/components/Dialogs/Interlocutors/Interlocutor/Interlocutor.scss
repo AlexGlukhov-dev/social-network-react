@@ -5,6 +5,9 @@
     &:hover{
         background: #047779;
     }
+    .selected{
+        color: cyan;
+    }
     a{
         display: inline-block;
         width: 100%;
@@ -17,5 +20,7 @@
         &:hover{
             color: #34C400;
         }
+
     }
+ 
 }

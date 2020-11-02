@@ -6,6 +6,9 @@
 .interlocutor:hover {
   background: #047779;
 }
+.interlocutor .selected {
+  color: cyan;
+}
 .interlocutor a {
   display: inline-block;
   width: 100%;

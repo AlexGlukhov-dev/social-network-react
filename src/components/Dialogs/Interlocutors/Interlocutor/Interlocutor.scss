@@ -1,0 +1,21 @@
+.interlocutor{
+    border-right: 1px solid #047779;
+    border-radius: 15px;
+    text-align: center;
+    &:hover{
+        background: #047779;
+    }
+    a{
+        display: inline-block;
+        width: 100%;
+        color:#aed31b;
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 15px;
+        border-bottom: 1px solid #047779;
+
+        &:hover{
+            color: #34C400;
+        }
+    }
+}

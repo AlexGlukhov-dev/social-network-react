@@ -6,7 +6,8 @@ const Interlocutor = (props) => {
     return (
       <div className={classes.interlocutor}>   
           <NavLink to={`/message/${props.id}`} activeClassName={classes.selected}>
-            {props.name}
+           <img src={'props.img_id'} className={classes.img} />
+           <span className={classes.name}>{props.name}</span>
           </NavLink>
       </div>
     );

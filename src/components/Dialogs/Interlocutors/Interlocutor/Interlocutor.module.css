@@ -21,3 +21,12 @@
 .interlocutor a:hover {
   color: #34C400;
 }
+.interlocutor a .img {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
+.interlocutor a .name {
+  display: inline-block;
+  padding: 8px 0 0 5px;
+}

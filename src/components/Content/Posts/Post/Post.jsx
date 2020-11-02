@@ -5,7 +5,6 @@ import Message from './Message/Message';
 import classes from './Post.module.css' ;
 
 
-
 const Post = (props) => {
     return (
       <div className={classes.post}>

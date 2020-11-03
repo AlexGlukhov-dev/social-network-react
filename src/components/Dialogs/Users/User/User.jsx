@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import classes from './Interlocutor.module.css' ;
+import classes from './User.module.css' ;
 
-const Interlocutor = (props) => {
+const User = (props) => {
     return (
       <div className={classes.interlocutor}>   
           <NavLink to={`/message/${props.id}`} activeClassName={classes.selected}>
@@ -13,4 +13,4 @@ const Interlocutor = (props) => {
     );
   }
 
-export default Interlocutor ;  
+export default User ;  

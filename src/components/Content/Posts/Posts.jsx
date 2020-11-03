@@ -13,15 +13,16 @@ let PostsData = [
 ] ;
 
 
+let PostsElements = PostsData.map(post => <Post name={post.name} data={post.data} message={post.message} like={post.like} comment={post.comment} repost={post.repost} view={post.view} /> 
+) ;
+
+
+
 const Posts = () => {
     return (
       <div className={classes.posts}>
         <Textarea />
-        <Post name={PostsData[0].name} data={PostsData[0].data} message={PostsData[0].message} like={PostsData[0].like} comment={PostsData[0].comment} repost={PostsData[0].repost} view={PostsData[0].view} /> 
-        <Post name={PostsData[1].name} data={PostsData[1].data} message={PostsData[1].message} like={PostsData[1].like} comment={PostsData[1].comment} repost={PostsData[1].repost} view={PostsData[1].view}  />
-        <Post name={PostsData[2].name} data={PostsData[2].data} message={PostsData[2].message} like={PostsData[2].like} comment={PostsData[2].comment} repost={PostsData[2].repost} view={PostsData[2].view}  />  
-        <Post name={PostsData[3].name} data={PostsData[3].data} message={PostsData[3].message} like={PostsData[3].like} comment={PostsData[3].comment} repost={PostsData[3].repost} view={PostsData[3].view}  />
-        <Post name={PostsData[4].name} data={PostsData[4].data} message={PostsData[4].message} like={PostsData[4].like} comment={PostsData[4].comment} repost={PostsData[4].repost} view={PostsData[4].view}  />  
+        {PostsElements}
       </div>
     
     );

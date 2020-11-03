@@ -10,15 +10,12 @@ let DialogData = [
 
 ] ;
 
-
+let DialogElemets = DialogData.map(dialog => <Item message={dialog.message} id={dialog.id}/>)
 
 const Dialog = (props) => {
     return (
       <div className={classes.dialog}>
-        <Item message={DialogData[0].message} id={DialogData[0].id}/>
-        <Item message={DialogData[1].message} id={DialogData[1].id}/>
-        <Item message={DialogData[2].message} id={DialogData[2].id}/>
-        <Item message={DialogData[3].message} id={DialogData[3].id}/>
+        {DialogElemets}
       </div>
     );
   }

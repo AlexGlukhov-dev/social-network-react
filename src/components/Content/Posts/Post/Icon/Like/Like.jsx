@@ -6,7 +6,7 @@ import classes from './Like.module.css' ;
 const Like = (props) => {
     return (
       <div className={classes.like}> 
-        <img className={classes.like__img} src='./like.png' /> 
+        <img className={classes.like__img} alt='images' src='./like.png' /> 
         <span className={classes.like__props}>{props.like}</span>
       </div>
     );

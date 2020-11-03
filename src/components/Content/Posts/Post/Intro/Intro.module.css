@@ -15,8 +15,9 @@
 .post__intro .intro__text .intro__name {
   display: inline-block;
   margin-left: 10px;
+  width: 140px;
 }
 .post__intro .intro__text .intro__data {
   display: inline-block;
-  margin-left: 200px;
+  margin-left: 140px;
 }

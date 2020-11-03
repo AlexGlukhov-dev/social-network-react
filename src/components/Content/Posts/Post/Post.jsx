@@ -8,7 +8,7 @@ import classes from './Post.module.css' ;
 const Post = (props) => {
     return (
       <div className={classes.post}>
-        <Intro name={props.name} data={props.data}/>
+        <Intro name={props.name} data={props.data} avaPost={props.avaPost}/>
         <Message message={props.message}/>
         <Icon like={props.like} comment={props.comment} repost={props.repost} view={props.view}/>
       </div>

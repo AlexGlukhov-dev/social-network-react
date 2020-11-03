@@ -13,7 +13,7 @@ let PostsData = [
 ] ;
 
 
-let PostsElements = PostsData.map(post => <Post name={post.name} data={post.data} message={post.message} like={post.like} comment={post.comment} repost={post.repost} view={post.view} /> 
+let PostsElements = PostsData.map(post => <Post key={post.id} name={post.name} data={post.data} message={post.message} like={post.like} comment={post.comment} repost={post.repost} view={post.view} /> 
 ) ;
 
 

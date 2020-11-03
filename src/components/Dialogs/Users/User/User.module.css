@@ -1,7 +1,6 @@
 .interlocutor {
   border-right: 1px solid #047779;
   border-radius: 15px;
-  text-align: center;
 }
 .interlocutor:hover {
   background: #047779;
@@ -22,11 +21,11 @@
   color: #34C400;
 }
 .interlocutor a .img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 30px;
 }
 .interlocutor a .name {
   display: inline-block;
-  padding: 8px 0 0 5px;
+  padding: 12px 0 0 10px;
 }

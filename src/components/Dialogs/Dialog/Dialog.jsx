@@ -10,7 +10,7 @@ let DialogData = [
 
 ] ;
 
-let DialogElemets = DialogData.map(dialog => <Item message={dialog.message} id={dialog.id}/>)
+let DialogElemets = DialogData.map(dialog => <Item key={dialog.id} message={dialog.message} id={dialog.id}/>)
 
 const Dialog = (props) => {
     return (

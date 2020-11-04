@@ -4,11 +4,14 @@ import Posts from './Posts/Posts';
 import Profile from './Profile/Profile';
 
 
-const Content = () => {
+const Content = (props) => {
+  
+
+
     return (
       <div className={classes.container}>
         <Profile />
-        <Posts />
+        <Posts PostsData={props.PostsData} />
       </div>
     );
   }

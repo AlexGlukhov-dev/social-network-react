@@ -4,10 +4,12 @@
   
   display: grid ;
   grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
   
  
   grid-template-areas:
-    'p cf';
+    'p cf'
+    'f cf';
   color: #b3f5c479;
       
 }

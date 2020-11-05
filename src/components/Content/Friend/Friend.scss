@@ -1,0 +1,42 @@
+.container{
+  height: 300px;
+  width: 300px;
+  margin: 5px;
+  border-radius: 20px;
+  border: 2px double #0a6a7e ;
+  grid-area: f;  
+
+  .friendLink{
+    width: 250px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin: 10px 0px 0px 20px ;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom:1px solid #076d99 ;
+    border-radius: 20px;
+    text-align: right;
+  }
+
+  .All_friends{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  
+
+    .img{
+     
+      height: 70px;
+      width: 70px;
+      border-radius: 35px;
+    }
+    
+    .friends_name{
+      
+      font-size: 16px;
+      margin-left: 15px;
+      margin-top: 5px;
+    }
+    
+  }
+}

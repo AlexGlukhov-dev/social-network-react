@@ -9,7 +9,7 @@ import Textarea from './Textarea/Textarea';
 
 const Posts = props => {
     
-    let PostsElements = props.PostsData.map(post => <Post key={post.id} name={post.name} data={post.data} message={post.message} like={post.like} comment={post.comment} repost={post.repost} view={post.view} avaPost={post.avaPost}/> 
+    let PostsElements = props.postsData.map(post => <Post key={post.id} name={post.name} data={post.data} message={post.message} like={post.like} comment={post.comment} repost={post.repost} view={post.view} avaPost={post.avaPost}/> 
     ) ;
 
     return (

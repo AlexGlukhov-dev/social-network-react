@@ -17,17 +17,37 @@
   border-radius: 20px;
   text-align: right;
 }
-.container .All_friends {
+.container .all_friends {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
   margin-top: 20px;
 }
-.container .All_friends .img {
+.container .all_friends .friends_row_one {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+.container .all_friends .friends_row_one .img {
   height: 70px;
   width: 70px;
   border-radius: 35px;
 }
-.container .All_friends .friends_name {
+.container .all_friends .friends_row_one .friends_name {
+  font-size: 16px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.container .all_friends .friends_row_two {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container .all_friends .friends_row_two .img {
+  height: 70px;
+  width: 70px;
+  border-radius: 35px;
+}
+.container .all_friends .friends_row_two .friends_name {
   font-size: 16px;
   margin-left: 15px;
   margin-top: 5px;

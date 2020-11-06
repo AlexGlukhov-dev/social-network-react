@@ -1,0 +1,19 @@
+.textarea {
+  grid-area: text;
+  margin: 15px;
+  margin-top: 90px;
+}
+.textarea .new_feed {
+  border-radius: 15px;
+  padding: 10px;
+}
+.textarea .btns {
+  margin-top: 5px;
+}
+.textarea .btns .btn {
+  border-radius: 15px;
+  background: #00c00a;
+  color: #9effff;
+  width: 95px;
+  height: 25px;
+}

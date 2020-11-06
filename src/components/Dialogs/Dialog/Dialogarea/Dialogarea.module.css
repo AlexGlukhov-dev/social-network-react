@@ -1,0 +1,19 @@
+.form {
+  grid-area: text;
+  margin: 15px;
+  margin-top: 90px;
+}
+.form .new_feed {
+  border-radius: 15px;
+  padding: 10px;
+}
+.form .btns {
+  margin-top: 5px;
+}
+.form .btns .btn {
+  border-radius: 15px;
+  background: #00c00a;
+  color: #9effff;
+  width: 95px;
+  height: 25px;
+}

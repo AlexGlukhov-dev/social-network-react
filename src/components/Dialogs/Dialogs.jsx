@@ -7,7 +7,7 @@ const Dialogs = props => {
     return (
       <div className={classes.dialogs_container}>
           <Users usersData={props.messagesPage.users}/>
-          <Dialog dialogsData={props.messagesPage.dialogs}/>
+          <Dialog dialogs={props.messagesPage.dialogs}/>
       </div>
     );
   }

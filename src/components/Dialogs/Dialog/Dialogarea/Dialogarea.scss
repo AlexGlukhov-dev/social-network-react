@@ -1,10 +1,12 @@
 .dialogarea{
-  border: 1px solid red;
-  font-size: 20px;
-  font-style: italic;
-
-  &:nth-child(2n){
-    text-align: left;
-  }
+  border: 1px solid #0a6a7e;
+  border-radius: 15px;
+  height: 100%;
+  margin: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  
  
 }

@@ -1,12 +1,4 @@
-.container {
-  height: 270px;
-  width: 300px;
-  margin: 5px;
-  border-radius: 20px;
-  border: 2px double #0a6a7e;
-  grid-area: f;
-}
-.container .friendLink {
+.friendLink {
   width: 250px;
   padding-bottom: 10px;
   padding-right: 20px;

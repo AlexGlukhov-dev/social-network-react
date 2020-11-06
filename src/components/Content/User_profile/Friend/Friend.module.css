@@ -1,0 +1,18 @@
+.container {
+  height: 270px;
+  width: 300px;
+  margin: 35px 5px 5px 5px;
+  border-radius: 20px;
+  border: 2px double #0a6a7e;
+}
+.container .friendLink {
+  width: 250px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  margin: 10px 0px 0px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 1px solid #076d99;
+  border-radius: 20px;
+  text-align: right;
+}

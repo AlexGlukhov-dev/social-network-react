@@ -9,7 +9,15 @@ let state = {
             {name : 'Alex Glukhov', data : '29 Okt. 2020', message : 'I know, i will reach the end', like : 62, comment : 3, repost : 9, view : 84, id : 5, avaPost : './alex.jpg'},
             {name : 'Shamil Abdulkerimov', data : '03 Nov. 2020', message : 'I robocop', like : 62, comment : 3, repost : 9, view : 84, id : 6, avaPost : './shamil.jpg'},
             {name : 'Lubov Glukhova', data : '03 Nov. 2020', message : 'I reactive', like : 4, comment : 1, repost : 1, view : 23, id : 7, avaPost : './lubaha.jpg'},
-        ]
+        ],
+        friends: [
+            {imgUrl: './lubaha.jpg', name: 'Lubaha', id: 1},
+            {imgUrl: './shamil.jpg', name: 'Shamil', id: 2},
+            {imgUrl: './jora.jpg', name: 'Georgy', id: 3},
+            {imgUrl: './leha.jpg', name: 'Alexey', id: 4},
+            {imgUrl: './vlad.jpg', name: 'Vladislav', id: 5},
+            {imgUrl: './andrey.jpg', name: 'Andrey', id: 6}
+            ] 
     },
     messagesPage: {
         dialogs: [

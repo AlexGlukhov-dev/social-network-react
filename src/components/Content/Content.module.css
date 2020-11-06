@@ -1,7 +1,6 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "p cf" "f cf";
+  grid-template-areas: "u cf";
   color: #b3f5c479;
 }

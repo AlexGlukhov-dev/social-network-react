@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './Content.module.css' ;
 import Posts from './Posts/Posts';
-import Profile from './Profile/Profile';
-import Friend from './Friend/Friend';
+
+import UserProfile from './User_profile/UserProfile';
 
 
 const Content = (props) => {
@@ -11,8 +11,7 @@ const Content = (props) => {
 
     return (
       <div className={classes.container}>
-        <Profile />
-        <Friend />
+        <UserProfile friends={props.profilePage.friends} />
         <Posts postsData={props.profilePage.posts} />
       </div>
     );

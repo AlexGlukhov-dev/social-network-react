@@ -12,7 +12,12 @@ const Content = (props) => {
     return (
       <div className={classes.container}>
         <UserProfile friends={props.profilePage.friends} />
-        <Posts postsData={props.profilePage.posts} />
+        <Posts 
+              postsData={props.profilePage.posts} 
+              newPostText={props.profilePage.newPostText} 
+              addPost={props.addPost} 
+              updateNewPostText={props.updateNewPostText}
+        />
       </div>
     );
   }

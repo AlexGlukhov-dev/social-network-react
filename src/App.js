@@ -10,7 +10,8 @@ import Friends from './components/Friends/Friends';
 import Music from './components/Music/Music';
 import News from './components/News/News';
 import Settings from './components/Settings/Settings';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+
 
 
 
@@ -19,22 +20,28 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 const App = props => {
   return (
-    <BrowserRouter>
-      <div className='wrapper'>
-        <Header />
-        <NavBar />
-        <div className='wrapper_content'>
-          <Route path='/profile' render={() => <Content profilePage={props.state.profilePage} />} />
-          <Route path='/message' render={() => <Dialogs messagesPage={props.state.messagesPage} />} />
-          <Route path='/friends' component={Friends} />
-          <Route path='/music' component={Music} />
-          <Route path='/feeds' component={News} />
-          <Route path='/settings' component={Settings} />
-        </div>
-        <Footer />
+    <div className='wrapper'>
+      <Header />
+      <NavBar />
+      <div className='wrapper_content'>
+        <Route path='/profile' render={() => <Content profilePage={props.state.profilePage}
+                                                      addPost={props.addedPost} 
+                                                      updateNewPostText={props.updateNewPostText}
+                                      />}
+        />
+
+        <Route path='/message' render={() => <Dialogs messagesPage={props.state.messagesPage} 
+                                                      addMessage={props.addedMessage}
+                                                      updateNewMessageText={props.updateNewMessageText}
+                                             />} 
+        />
+        <Route path='/friends' component={Friends} />
+        <Route path='/music' component={Music} />
+        <Route path='/feeds' component={News} />
+        <Route path='/settings' component={Settings} />
       </div>
-    </BrowserRouter>
-    
+      <Footer />
+    </div>  
   );
 }
 

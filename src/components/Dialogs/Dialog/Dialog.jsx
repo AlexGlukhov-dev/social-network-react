@@ -8,8 +8,11 @@ import Textarea from './Textarea/Textarea';
 const Dialog = props => {
     return (
       <div className={classes.dialog}>
-        <Dialogarea dialogsData={props.dialogs} />
-        <Textarea />
+        <Dialogarea messagesData={props.messages} />
+        <Textarea addMessage={props.addMessage}
+                  newMessageText={props.newMessageText}
+                  updateNewMessageText={props.updateNewMessageText}
+        />
       </div>
     );
   }

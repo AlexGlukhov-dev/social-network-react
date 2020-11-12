@@ -1,9 +1,7 @@
 
 
 
-let rerenderEntireTree = () => {
-    console.log('added chenges');
-}
+let rerenderEntireTree;
 
 let state = {
     profilePage: {
@@ -34,7 +32,7 @@ let state = {
             {id : 3, message : 'Lubashka'},
             {id : 4, message : 'Kolobashka'}
         ],
-        newMessageText: 'hello gays',
+        newMessageText: '',
         users: [
             {id : 1, name : 'Lubov Glukhova', img_id : './lubaha.jpg'},
             {id : 2, name : 'Shamil Abdulkerimov', img_id : './shamil.jpg'},

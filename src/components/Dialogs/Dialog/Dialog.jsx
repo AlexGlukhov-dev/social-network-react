@@ -9,9 +9,8 @@ const Dialog = props => {
     return (
       <div className={classes.dialog}>
         <Dialogarea messagesData={props.messages} />
-        <Textarea addMessage={props.addMessage}
-                  newMessageText={props.newMessageText}
-                  updateNewMessageText={props.updateNewMessageText}
+        <Textarea newMessageText={props.newMessageText}
+                  dispatch={props.dispatch}
         />
       </div>
     );

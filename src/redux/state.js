@@ -40,59 +40,54 @@ let store = {
             ]
         } 
     },
-
-    getState(){
-        return this._state ;
-    },
-
     _callSubscriber() {
         alert('!!!') ;
     },
 
-    addPost() {
-        let newPost = {
-            name : 'Alex Glukhov', 
-            data : '12 Nov. 2020', 
-            message : this.getState().profilePage.newPostText,
-            like : 0,
-            comment : 0, 
-            repost : 0, 
-            view : 0, 
-            id : 7,
-            avaPost : './alex.jpg'
-        };
-    
-        this.getState().profilePage.posts.unshift(newPost);
-        this.getState().profilePage.newPostText = '';
-    
-        this._callSubscriber(this.getState());
+    getState(){
+        return this._state ;
     },
-
-    
-    updateNewPostText(newText) {
-        this.getState().profilePage.newPostText = newText;
-        this._callSubscriber(this.getState());
-    },
-
-    addMessage() {
-        let newMessage = {
-            id : 5, 
-            message : this.getState().messagesPage.newMessageText
-        };
-    
-        this.getState().messagesPage.messages.push(newMessage);
-        this.getState().messagesPage.newMessageText = '';
-        this._callSubscriber(this.getState());
-    },
-
-    
-    updateNewMessageText(newText) {
-        this.getState().messagesPage.newMessageText = newText;
-        this._callSubscriber(this.getState());
-    },
-
     subscribe(observer) {
         this._callSubscriber = observer ;
+    },
+
+    dispatch(action) {
+        if(action.type === 'ADD-POST') {
+            let newPost = {
+                name : 'Alex Glukhov', 
+                data : '12 Nov. 2020', 
+                message : this.getState().profilePage.newPostText,
+                like : 0,
+                comment : 0, 
+                repost : 0, 
+                view : 0, 
+                id : 7,
+                avaPost : './alex.jpg'
+            };
+        
+            this.getState().profilePage.posts.unshift(newPost);
+            this.getState().profilePage.newPostText = '';
+        
+            this._callSubscriber(this.getState());
+        } 
+        else if(action.type === 'UPDATE-NEW-POST-TEXT') {
+            this.getState().profilePage.newPostText = action.newText;
+            this._callSubscriber(this.getState());
+        }
+        else if(action.type === 'ADD-MESSAGE') {
+            let newMessage = {
+                id : 5, 
+                message : this.getState().messagesPage.newMessageText
+            };
+        
+            this.getState().messagesPage.messages.push(newMessage);
+            this.getState().messagesPage.newMessageText = '';
+            this._callSubscriber(this.getState());
+        }
+        else if(action.type === 'UPDATE-NEW-MESSAGE-TEXT') {
+            this.getState().messagesPage.newMessageText = action.newText;
+            this._callSubscriber(this.getState());
+        }
     }
 }
 

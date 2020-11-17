@@ -14,9 +14,8 @@ const Posts = props => {
 
     return (
       <div className={classes.posts}>
-        <Textarea addPost={props.addPost} 
-                  newPostText={props.newPostText}
-                  updateNewPostText={props.updateNewPostText}
+        <Textarea newPostText={props.newPostText}
+                  dispatch={props.dispatch}
         />
         {PostsElements}
       </div>

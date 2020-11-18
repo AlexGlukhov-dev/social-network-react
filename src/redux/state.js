@@ -1,3 +1,8 @@
+const ADD_POST = 'ADD-POST';
+const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+const ADD_MESSAGE = 'ADD-MESSAGE';
+const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
+
 
 let store = {
     _state: {
@@ -52,7 +57,7 @@ let store = {
     },
 
     dispatch(action) {
-        if(action.type === 'ADD-POST') {
+        if(action.type === ADD_POST) {
             let newPost = {
                 name : 'Alex Glukhov', 
                 data : '12 Nov. 2020', 
@@ -70,11 +75,11 @@ let store = {
         
             this._callSubscriber(this.getState());
         } 
-        else if(action.type === 'UPDATE-NEW-POST-TEXT') {
+        else if(action.type === UPDATE_NEW_POST_TEXT) {
             this.getState().profilePage.newPostText = action.newText;
             this._callSubscriber(this.getState());
         }
-        else if(action.type === 'ADD-MESSAGE') {
+        else if(action.type === ADD_MESSAGE) {
             let newMessage = {
                 id : 5, 
                 message : this.getState().messagesPage.newMessageText
@@ -84,12 +89,32 @@ let store = {
             this.getState().messagesPage.newMessageText = '';
             this._callSubscriber(this.getState());
         }
-        else if(action.type === 'UPDATE-NEW-MESSAGE-TEXT') {
+        else if(action.type === UPDATE_NEW_MESSAGE_TEXT) {
             this.getState().messagesPage.newMessageText = action.newText;
             this._callSubscriber(this.getState());
         }
     }
 }
+
+
+
+export const addPostActionCreater = () => ({
+    type: ADD_POST
+});
+  
+export const updateNewPostTextActionCreater = (text) => ({
+    type: UPDATE_NEW_POST_TEXT, 
+    newText: text
+});
+
+export const addMessageActionCreater = () => ({
+    type: ADD_MESSAGE
+});
+  
+export const updateNewMessageTextActionCreater = (text) => ({
+    type: UPDATE_NEW_MESSAGE_TEXT, 
+    newText: text
+})
 
 
 

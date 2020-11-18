@@ -1,20 +1,25 @@
 import React from 'react';
+import { addMessageActionCreater, updateNewMessageTextActionCreater } from '../../../../redux/state';
 import classes from './Textarea.module.css' ;
+
+
 
 
 
 const Textarea = (props) => {
   const element = React.createRef() ;
 
-  const addPost = () => {
+  const addMessage = () => {
     //props.addMessage() ;
-    props.dispatch({type: 'ADD-MESSAGE'});
+    let action = addMessageActionCreater();
+    props.dispatch(action);
   }
 
   const onMessageChange = () => {
     let text = element.current.value;
     //props.updateNewMessageText(text);
-    props.dispatch({type: 'UPDATE-NEW-MESSAGE-TEXT', newText: text});
+    let action = updateNewMessageTextActionCreater(text); 
+    props.dispatch(action);
   }
  
   
@@ -25,7 +30,7 @@ const Textarea = (props) => {
                     onChange={onMessageChange} value={props.newMessageText}/>
         </div>
         <div className={classes.btns}>
-          <button onClick={addPost} className={classes.btn} >Submit</button>
+          <button onClick={addMessage} className={classes.btn} >Submit</button>
         </div>   
       </div>
     );

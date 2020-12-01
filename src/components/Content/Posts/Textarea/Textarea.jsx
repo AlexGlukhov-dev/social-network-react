@@ -1,6 +1,9 @@
 import React from 'react';
-import { addPostActionCreater, updateNewPostTextActionCreater } from '../../../../redux/state';
+import { addPostActionCreater, updateNewPostTextActionCreater } from '../../../../redux/profile_reducer';
 import classes from './Textarea.module.css' ;
+
+
+
 
 
 

@@ -1,7 +1,6 @@
 import React from 'react';
-import { addMessageActionCreater, updateNewMessageTextActionCreater } from '../../../../redux/state';
+import { addMessageActionCreater, updateNewMessageTextActionCreater } from '../../../../redux/messages_reducer';
 import classes from './Textarea.module.css' ;
-
 
 
 

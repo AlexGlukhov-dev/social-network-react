@@ -18,13 +18,14 @@ import { Route } from 'react-router-dom';
 
 
 
-const App = props => {
+const App = (props) => {
+
   return (
     <div className='wrapper'>
       <Header />
       <NavBar />
       <div className='wrapper_content'>
-        <Route path='/profile' render={() => <Content profilePage={props.state.profilePage} dispatch={props.dispatch} />}
+        <Route path='/profile' render={() => <Content store={props.store}/>}
         />
         <Route path='/message' render={() => <Dialogs messagesPage={props.state.messagesPage} dispatch={props.dispatch} />} 
         />

@@ -8,3 +8,27 @@
   flex-direction: column;
   padding-bottom: 30px;
 }
+.posts .form {
+  grid-area: text;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  margin-left: 330px;
+}
+.posts .form .new_feed {
+  border-radius: 15px;
+  padding: 10px;
+}
+.posts .form .btns {
+  margin-left: 243px;
+  margin-top: 5px;
+}
+.posts .form .btns .btn {
+  display: block;
+  border-radius: 15px;
+  background: #00c00a;
+  color: #9effff;
+  width: 95px;
+  height: 25px;
+}

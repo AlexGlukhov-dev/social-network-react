@@ -1,22 +1,18 @@
 import React from 'react';
 import classes from './Content.module.css' ;
-import Posts from './Posts/Posts';
+import PostsContainer from './Posts/PostsContainer';
 
 import UserProfile from './User_profile/UserProfile';
 
 
 const Content = (props) => {
+
+  let state = props.store.getState();
   
-
-
     return (
       <div className={classes.container}>
-        <UserProfile friends={props.profilePage.friends} />
-        <Posts 
-              postsData={props.profilePage.posts} 
-              newPostText={props.profilePage.newPostText} 
-              dispatch={props.dispatch}
-        />
+        <UserProfile friends={state.profilePage.friends} />
+        <PostsContainer store={props.store}/>
       </div>
     );
   }

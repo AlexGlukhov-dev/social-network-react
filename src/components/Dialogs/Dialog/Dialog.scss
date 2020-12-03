@@ -9,5 +9,56 @@
     flex-direction: column;
     text-align: center;
     
+    .dialogarea{
+        border: 1px solid #0a6a7e;
+        border-radius: 15px;
+        height: 100%;
+        margin: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+
+    .textarea{
+        border-top: 1px double #0a6a7e ;
+        padding-top: 30px;
+        grid-area: text;
+        margin: 15px;
+       
+        height: 200px;
+        display: flex;
+    
+        .texts{
+          padding-left: 20px;
+          .new_feed {
+            border-radius: 15px;
+            padding: 10px;
+            
+          
+          }  
+        }
+          
+        .btns {
+          margin-left: 5px;
+        
+          .btn {
+            border-radius: 15px ;
+            background: #00c00a;
+            color: #9effff;
+            width: 95px;
+            height: 35px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-style: italic;
+    
+            &:hover{
+              background: #9effff;
+              color: #00c00a;
+            }
+          }
+        }
+    }
 
 }

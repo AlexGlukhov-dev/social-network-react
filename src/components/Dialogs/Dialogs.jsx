@@ -1,16 +1,15 @@
 import React from 'react';
 import classes from './Dialogs.module.css' ;
 import Users from './Users/Users';
-import Dialog from './Dialog/Dialog';
+import DialogContainer from './Dialog/DialogContainer';
 
 const Dialogs = props => {
+
+  let state = props.store.getState();
     return (
       <div className={classes.dialogs_container}>
-          <Users usersData={props.messagesPage.users}/>
-          <Dialog messages={props.messagesPage.messages}
-                  newMessageText={props.messagesPage.newMessageText}
-                  dispatch={props.dispatch}
-          />
+          <Users usersData={state.messagesPage.users}/>
+          <DialogContainer store={props.store}/>
       </div>
     );
   }

@@ -5,8 +5,8 @@ import Item from './Item/Item';
 
 
 
-const DialogRef = props => {
- 
+const Dialog = props => {
+  debugger;
   let DialogElemets = props.messagesData.map((dialog) => <Item key={dialog.id} message={dialog.message} id={dialog.id}/>);
 
   const element = React.createRef() ;
@@ -39,4 +39,4 @@ const DialogRef = props => {
   );
 }
 
-export default DialogRef ;  
+export default Dialog;  

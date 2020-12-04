@@ -5,15 +5,18 @@ import App from './App';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import store from './redux/redux_store';
+import { Provider } from 'react-redux';
 
 
 
 
-let rerenderEntireTree = (state) => {
+let rerenderEntireTree = () => {
     ReactDOM.render(
         <BrowserRouter >
             <React.StrictMode>
-                <App state={state} dispatch={store.dispatch.bind(store)} store={store}/>
+                <Provider store={store}>
+                    <App  store={store}/>
+                </Provider>
             </React.StrictMode>
         </BrowserRouter>, document.getElementById('root')
     );

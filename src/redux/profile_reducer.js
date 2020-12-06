@@ -26,7 +26,7 @@ let initialState = {
 
 const profileReducer = (state = initialState, action) => {
     switch(action.type) {
-        case ADD_POST : 
+        case ADD_POST : {
             let newPost = {
                 name : 'Alex Glukhov', 
                 data : '12 Nov. 2020', 
@@ -38,15 +38,18 @@ const profileReducer = (state = initialState, action) => {
                 id : 7,
                 avaPost : './alex.jpg'
             };
-    
-            state.posts.unshift(newPost);
-            state.newPostText = '';
-            return state;
-
-        case UPDATE_NEW_POST_TEXT :
-            state.newPostText = action.newText;   
-            return state;   
             
+            let stateCopy = {...state};
+            stateCopy.posts = [...state.posts];
+            stateCopy.posts.unshift(newPost);
+            stateCopy.newPostText = '';
+            return stateCopy;
+        }    
+        case UPDATE_NEW_POST_TEXT : {
+            let stateCopy = {...state};
+            stateCopy.newPostText = action.newText;   
+            return stateCopy;   
+        }   
         default : 
             return state;  
     }
@@ -57,7 +60,7 @@ export const addPostActionCreater = () => ({
     type: ADD_POST
 });
   
-export const updateNewPostTextActionCreater = (text) => ({
+export const updateNewPostTextActionCreater =   (text) => ({
     type: UPDATE_NEW_POST_TEXT, 
     newText: text
 });

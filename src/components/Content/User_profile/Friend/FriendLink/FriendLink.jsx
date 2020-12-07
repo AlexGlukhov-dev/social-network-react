@@ -5,7 +5,7 @@ import classes from './FriendLink.module.css' ;
 
 
 
-const FriendLink= (props) => {
+const FriendLink= () => {
   
     return (
     

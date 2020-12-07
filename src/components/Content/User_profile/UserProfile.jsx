@@ -4,14 +4,14 @@ import Profile from './Profile/Profile';
 import Friend from './Friend/Friend';
 
 
-const UserProfile = (props) => {
+const UserProfile = () => {
   
 
 
     return (
       <div className={classes.user}>
           <Profile />
-          <Friend friendsData={props.friends} />
+          <Friend/>
       </div>
     );
   }

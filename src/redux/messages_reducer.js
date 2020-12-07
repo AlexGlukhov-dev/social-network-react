@@ -14,8 +14,9 @@ let initialState = {
         {id : 2, name : 'Shamil Abdulkerimov', img_id : './shamil.jpg'},
         {id : 3, name : 'Vlad Maximov', img_id : './vlad.jpg'},
         {id : 4, name : 'Georgy Shoronov', img_id : './jora.jpg'},
-        {id : 5, name : 'Alexey Kobelev', img_id : './leha.jpg'},
-        {id : 6, name : 'Andrey Pavlenko', img_id : './andrey.jpg'}
+        {id : 5, name : 'Andrey Pavlenko', img_id : './andrey.jpg'},
+        {id : 6, name : 'Alexey Kobelev', img_id : './leha.jpg'}
+        
     ]
 };
 
